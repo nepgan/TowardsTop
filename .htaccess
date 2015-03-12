@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteBase /
+DirectoryIndex index.php
+RewriteRule ^admin/login/?$ /admin.php?action=login&do=login [QSA,L]
+RewriteRule ^admin/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ /admin.php?action=$1&do=$2 [QSA,L]
+
+RewriteRule ^aff/register/?$ /aff/index.php?action=user&do=register [L]
+RewriteRule ^aff/login/?$ /aff/index.php?action=user&do=login [L]
+RewriteRule ^aff/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ /aff/index.php?action=$1&do=$2 [QSA,L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ /index.php?action=$1&do=$2 [QSA,L]
