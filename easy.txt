@@ -1,0 +1,7 @@
+git add *
+
+git commit -m "hello gan"
+
+git pull https://github.com/nepgan/TowardsTop
+
+git push origin master
