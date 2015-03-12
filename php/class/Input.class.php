@@ -2,7 +2,8 @@
 /**
  * 对输入进行检查
  *
- * @author 甘文涛
+ * @author Matt Gan 甘文涛
+ * @email qyjazz@qq.com
  * @date 2012-06-21
  */
 class Input
